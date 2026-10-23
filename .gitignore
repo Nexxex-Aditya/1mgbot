@@ -1,0 +1,52 @@
+# --- Secrets / credentials (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+secrets/
+
+# --- Private project instructions / documentation ---
+/GEMINI.md
+/CAREPATH_MASTER_PROMPT.md
+/Project_details/
+/docs/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Local data / artifacts ---
+data/
+*.db
+*.sqlite
+*.sqlite3
+evaluation/reports/*.json
+evaluation/reports/*.md
+!evaluation/reports/.gitkeep
+artifacts/
+logs/
+*.log
+
+# --- Streamlit local secrets ---
+.streamlit/secrets.toml
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
